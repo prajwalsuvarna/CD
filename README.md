@@ -17,4 +17,4 @@ gcc *.c -ll
 ```
 
 # Canonical Itemsets
-![Parse Tree](image.png)
+![output](https://github.com/prajwalsuvarna/CD/assets/97435165/f51eb204-0496-4e35-9349-2cdfa9077513)
