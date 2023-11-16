@@ -7,9 +7,9 @@
 
 %token ID NUM NL BEGIN_ PRINT END_ INT FLOAT REAL_NUM STRING CM EQ FOR TO
 %%
-program: BEGIN_ NL statement_list END_ { printf("\nValid language\n"); exit(0); };
+S: BEGIN_ NL statement_list END_ { printf("\nValid language\n"); exit(0); };
 statement_list: statement NL | statement_list statement NL;
-statement: declaration | assignment | loop | PRINT STRING;
+statement: declaration | assignment | loop |  PRINT ID;
 declaration: type ID_list;
 type: INT | FLOAT | STRING;
 ID_list: ID | ID_list CM ID;

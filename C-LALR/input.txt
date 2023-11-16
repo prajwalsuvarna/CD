@@ -1,5 +1,4 @@
 BEGIN
- PRINT “HELLO”
  INTEGER A, B, C
  REAL D, E
  STRING X, Y
@@ -12,4 +11,4 @@ BEGIN
  Y := “hello there”
  FOR I:= 1 TO 5 
  PRINT “Strings are [X] and [Y]”
-END
+ END
