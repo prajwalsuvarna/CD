@@ -10,9 +10,11 @@
 "STRING" { return STRING; }
 "REAL" {return REAL_NUM;}
 "TO" { return TO; }
-"END" { return END_; }
-["a-zA-Z_][a-zA-Z0-9_"]* {return ID;}
+"END" { return END_;}
+"FOR" {return FOR;}
+[a-zA-Z_][a-zA-Z0-9_]* {return ID;}
 [0-9]+(\.[0-9]+)? { return NUM; }
+\"([^"]*)\"  {return LIT;}
 \r\n {return NL;}
 "    " {;}
 [ \t]+ {;}

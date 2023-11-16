@@ -5,18 +5,17 @@
     extern FILE *yyin;
 %}
 
-%token ID NUM NL BEGIN_ PRINT END_ INT FLOAT REAL_NUM STRING CM EQ FOR TO
+%token ID NUM NL BEGIN_ PRINT END_ INT FLOAT REAL_NUM STRING CM EQ FOR TO LIT
 %%
 S: BEGIN_ NL statement_list END_ { printf("\nValid language\n"); exit(0); };
 statement_list: statement NL | statement_list statement NL;
-statement: declaration | assignment | loop |  PRINT ID;
+statement: declaration | assignment | loop |  PRINT LIT;
 declaration: type ID_list;
-type: INT | FLOAT | STRING;
+type: INT | FLOAT | STRING | REAL_NUM;
 ID_list: ID | ID_list CM ID;
 assignment: ID EQ expression;
-expression: ID | NUM | REAL_NUM | STRING;
-loop: FOR ID EQ expression TO expression NL statement_list END_
-;
+expression: ID | NUM | LIT;
+loop: FOR ID EQ NUM TO NUM NL statement;
 
 %%
 
