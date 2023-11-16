@@ -73,14 +73,15 @@ def goto(items, symbol):
 
 
 def calc_states():
-    def contains(states, t):
-
+    def contains(states, t_closure):
         for s in states:
-            if len(s) != len(t): continue
+            if len(s.closure) != len(t_closure):
+                continue
 
-            if sorted(s) == sorted(t):
-                for i in range(len(s)):
-                    if s[i].lookahead != t[i].lookahead: break
+            if sorted(s.closure) == sorted(t_closure):
+                for i in range(len(s.closure)):
+                    if s.closure[i].lookahead != t_closure[i].lookahead:
+                        break
                 else:
                     return True
         return False
@@ -95,14 +96,26 @@ def calc_states():
         flag = 0
         for s in states:
             for e in nt_list + t_list:
-                t = goto(s, e)
-                if t == [] or contains(states, t): continue
-                states.append(t)
-                flag = 1
+                t_closure = goto(s.closure, e)
+                if t_closure == [] or contains(states, t_closure):
+                    continue
 
-        if not flag: break
+                # Merge states with the same core
+                existing_state = None
+                for existing in states:
+                    if existing.closure == t_closure:
+                        existing_state = existing
+                        break
+
+                if existing_state is not None:
+                    existing_state.closure[0].lookahead.extend(t_closure[0].lookahead)
+                else:
+                    states.append(State(t_closure))
+                    flag = 1
+
+        if not flag:
+            break
     return states
-
 
 def make_table(states):
     global nt_list, t_list
