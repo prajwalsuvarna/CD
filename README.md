@@ -16,4 +16,5 @@ lex main.l
 gcc *.c -ll
 ```
 
+# Canonical Itemsets
 ![Parse Tree](image.png)
