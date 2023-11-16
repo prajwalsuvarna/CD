@@ -15,3 +15,5 @@ lex main.l
 ```
 gcc *.c -ll
 ```
+
+![Parse Tree](image.png)
