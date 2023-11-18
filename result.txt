@@ -1,484 +1,515 @@
 Starting parse
 Entering state 0
-Reading a token: Next token is token BEGIN_ ()
+Stack now 0
+Reading a token
+Next token is token BEGIN_ ()
 Shifting token BEGIN_ ()
 Entering state 1
-Reading a token: Next token is token NL ()    
+Stack now 0 1
+Reading a token
+Next token is token NL ()
 Shifting token NL ()
 Entering state 3
-Reading a token: Next token is token PRINT () 
+Stack now 0 1 3
+Reading a token
+Next token is token PRINT ()
 Shifting token PRINT ()
 Entering state 6
-Reading a token: Next token is token LIT ()   
+Stack now 0 1 3 6
+Reading a token
+Next token is token LIT ()
 Shifting token LIT ()
 Entering state 19
-Reducing stack by rule 7 (line 12):
+Stack now 0 1 3 6 19
+Reducing stack by rule 7 (line 11):
    $1 = token PRINT ()
    $2 = token LIT ()
 -> $$ = nterm statement ()
-Stack now 0 1 3
 Entering state 13
-Reading a token: Next token is token NL ()    
+Stack now 0 1 3 13
+Reading a token
+Next token is token NL ()
 Shifting token NL ()
 Entering state 23
-Reducing stack by rule 2 (line 11):
+Stack now 0 1 3 13 23
+Reducing stack by rule 2 (line 10):
    $1 = nterm statement ()
    $2 = token NL ()
 -> $$ = nterm statement_list ()
-Stack now 0 1 3
 Entering state 12
-Reading a token: Next token is token INT ()
+Stack now 0 1 3 12
+Reading a token
+Next token is token INT ()
 Shifting token INT ()
 Entering state 7
-Reducing stack by rule 9 (line 14):        
+Stack now 0 1 3 12 7
+Reducing stack by rule 9 (line 13):
    $1 = token INT ()
 -> $$ = nterm type ()
-Stack now 0 1 3 12
 Entering state 15
-Reading a token: Next token is token ID ()
+Stack now 0 1 3 12 15
+Reading a token
+Next token is token ID ()
 Shifting token ID ()
 Entering state 24
-Reducing stack by rule 13 (line 15):
+Stack now 0 1 3 12 15 24
+Reducing stack by rule 13 (line 14):
    $1 = token ID ()
 -> $$ = nterm ID_list ()
-Stack now 0 1 3 12 15
 Entering state 25
-Reading a token: Next token is token CM ()
+Stack now 0 1 3 12 15 25
+Reading a token
+Next token is token CM ()
 Shifting token CM ()
 Entering state 33
-Reading a token: Next token is token ID ()
+Stack now 0 1 3 12 15 25 33
+Reading a token
+Next token is token ID ()
 Shifting token ID ()
 Entering state 35
-Reducing stack by rule 14 (line 15):
+Stack now 0 1 3 12 15 25 33 35
+Reducing stack by rule 14 (line 14):
    $1 = nterm ID_list ()
    $2 = token CM ()
    $3 = token ID ()
 -> $$ = nterm ID_list ()
-Stack now 0 1 3 12 15
 Entering state 25
-Reading a token: Next token is token CM ()
+Stack now 0 1 3 12 15 25
+Reading a token
+Next token is token CM ()
 Shifting token CM ()
 Entering state 33
-Reading a token: Next token is token ID ()
+Stack now 0 1 3 12 15 25 33
+Reading a token
+Next token is token ID ()
 Shifting token ID ()
 Entering state 35
-Reducing stack by rule 14 (line 15):
+Stack now 0 1 3 12 15 25 33 35
+Reducing stack by rule 14 (line 14):
    $1 = nterm ID_list ()
    $2 = token CM ()
    $3 = token ID ()
 -> $$ = nterm ID_list ()
-Stack now 0 1 3 12 15
 Entering state 25
-Reading a token: Next token is token NL ()
-Reducing stack by rule 8 (line 13):
+Stack now 0 1 3 12 15 25
+Reading a token
+Next token is token NL ()
+Reducing stack by rule 8 (line 12):
    $1 = nterm type ()
    $2 = nterm ID_list ()
 -> $$ = nterm declaration ()
-Stack now 0 1 3 12
 Entering state 14
-Reducing stack by rule 4 (line 12):
+Stack now 0 1 3 12 14
+Reducing stack by rule 4 (line 11):
    $1 = nterm declaration ()
 -> $$ = nterm statement ()
-Stack now 0 1 3 12
 Entering state 22
+Stack now 0 1 3 12 22
 Next token is token NL ()
 Shifting token NL ()
 Entering state 32
-Reducing stack by rule 3 (line 11):
+Stack now 0 1 3 12 22 32
+Reducing stack by rule 3 (line 10):
    $1 = nterm statement_list ()
    $2 = nterm statement ()
    $3 = token NL ()
 -> $$ = nterm statement_list ()
-Stack now 0 1 3
 Entering state 12
-Reading a token: Next token is token REAL_NUM ()
+Stack now 0 1 3 12
+Reading a token
+Next token is token REAL_NUM ()
 Shifting token REAL_NUM ()
 Entering state 9
-Reducing stack by rule 12 (line 14):
+Stack now 0 1 3 12 9
+Reducing stack by rule 12 (line 13):
    $1 = token REAL_NUM ()
 -> $$ = nterm type ()
-Stack now 0 1 3 12
 Entering state 15
-Reading a token: Next token is token ID ()
+Stack now 0 1 3 12 15
+Reading a token
+Next token is token ID ()
 Shifting token ID ()
 Entering state 24
-Reducing stack by rule 13 (line 15):
+Stack now 0 1 3 12 15 24
+Reducing stack by rule 13 (line 14):
    $1 = token ID ()
 -> $$ = nterm ID_list ()
-Stack now 0 1 3 12 15
 Entering state 25
-Reading a token: Next token is token CM ()
+Stack now 0 1 3 12 15 25
+Reading a token
+Next token is token CM ()
 Shifting token CM ()
 Entering state 33
-Reading a token: Next token is token ID ()
+Stack now 0 1 3 12 15 25 33
+Reading a token
+Next token is token ID ()
 Shifting token ID ()
 Entering state 35
-Reducing stack by rule 14 (line 15):
+Stack now 0 1 3 12 15 25 33 35
+Reducing stack by rule 14 (line 14):
    $1 = nterm ID_list ()
    $2 = token CM ()
    $3 = token ID ()
 -> $$ = nterm ID_list ()
-Stack now 0 1 3 12 15
 Entering state 25
-Reading a token: Next token is token NL ()
-Reducing stack by rule 8 (line 13):
+Stack now 0 1 3 12 15 25
+Reading a token
+Next token is token NL ()
+Reducing stack by rule 8 (line 12):
    $1 = nterm type ()
    $2 = nterm ID_list ()
 -> $$ = nterm declaration ()
-Stack now 0 1 3 12
 Entering state 14
-Reducing stack by rule 4 (line 12):
+Stack now 0 1 3 12 14
+Reducing stack by rule 4 (line 11):
    $1 = nterm declaration ()
 -> $$ = nterm statement ()
-Stack now 0 1 3 12
 Entering state 22
+Stack now 0 1 3 12 22
 Next token is token NL ()
 Shifting token NL ()
 Entering state 32
-Reducing stack by rule 3 (line 11):
+Stack now 0 1 3 12 22 32
+Reducing stack by rule 3 (line 10):
    $1 = nterm statement_list ()
    $2 = nterm statement ()
    $3 = token NL ()
 -> $$ = nterm statement_list ()
-Stack now 0 1 3
 Entering state 12
-Reading a token: Next token is token STRING ()
+Stack now 0 1 3 12
+Reading a token
+Next token is token STRING ()
 Shifting token STRING ()
 Entering state 10
-Reducing stack by rule 11 (line 14):
+Stack now 0 1 3 12 10
+Reducing stack by rule 11 (line 13):
    $1 = token STRING ()
 -> $$ = nterm type ()
-Stack now 0 1 3 12
 Entering state 15
-Reading a token: Next token is token ID ()
+Stack now 0 1 3 12 15
+Reading a token
+Next token is token ID ()
 Shifting token ID ()
 Entering state 24
-Reducing stack by rule 13 (line 15):
+Stack now 0 1 3 12 15 24
+Reducing stack by rule 13 (line 14):
    $1 = token ID ()
 -> $$ = nterm ID_list ()
-Stack now 0 1 3 12 15
 Entering state 25
-Reading a token: Next token is token CM ()
+Stack now 0 1 3 12 15 25
+Reading a token
+Next token is token CM ()
 Shifting token CM ()
 Entering state 33
-Reading a token: Next token is token ID ()
+Stack now 0 1 3 12 15 25 33
+Reading a token
+Next token is token ID ()
 Shifting token ID ()
 Entering state 35
-Reducing stack by rule 14 (line 15):
+Stack now 0 1 3 12 15 25 33 35
+Reducing stack by rule 14 (line 14):
    $1 = nterm ID_list ()
    $2 = token CM ()
    $3 = token ID ()
 -> $$ = nterm ID_list ()
-Stack now 0 1 3 12 15
 Entering state 25
-Reading a token: Next token is token NL ()
-Reducing stack by rule 8 (line 13):
+Stack now 0 1 3 12 15 25
+Reading a token
+Next token is token NL ()
+Reducing stack by rule 8 (line 12):
    $1 = nterm type ()
    $2 = nterm ID_list ()
 -> $$ = nterm declaration ()
-Stack now 0 1 3 12
 Entering state 14
-Reducing stack by rule 4 (line 12):
+Stack now 0 1 3 12 14
+Reducing stack by rule 4 (line 11):
    $1 = nterm declaration ()
 -> $$ = nterm statement ()
-Stack now 0 1 3 12
 Entering state 22
+Stack now 0 1 3 12 22
 Next token is token NL ()
 Shifting token NL ()
 Entering state 32
-Reducing stack by rule 3 (line 11):
+Stack now 0 1 3 12 22 32
+Reducing stack by rule 3 (line 10):
    $1 = nterm statement_list ()
    $2 = nterm statement ()
    $3 = token NL ()
 -> $$ = nterm statement_list ()
-Stack now 0 1 3
 Entering state 12
-Reading a token: Next token is token ID ()
+Stack now 0 1 3 12
+Reading a token
+Next token is token ID ()
 Shifting token ID ()
 Entering state 5
-Reading a token: Next token is token EQ ()
+Stack now 0 1 3 12 5
+Reading a token
+Next token is token EQ ()
 Shifting token EQ ()
 Entering state 18
-Reading a token: Next token is token NUM ()
+Stack now 0 1 3 12 5 18
+Reading a token
+Next token is token NUM ()
 Shifting token NUM ()
 Entering state 27
-Reducing stack by rule 17 (line 17):
+Stack now 0 1 3 12 5 18 27
+Reducing stack by rule 17 (line 16):
    $1 = token NUM ()
 -> $$ = nterm expression ()
-Stack now 0 1 3 12 5 18
 Entering state 30
-Reducing stack by rule 15 (line 16):
+Stack now 0 1 3 12 5 18 30
+Reducing stack by rule 15 (line 15):
    $1 = token ID ()
    $2 = token EQ ()
    $3 = nterm expression ()
 -> $$ = nterm assignment ()
-Stack now 0 1 3 12
 Entering state 16
-Reducing stack by rule 5 (line 12):
+Stack now 0 1 3 12 16
+Reducing stack by rule 5 (line 11):
    $1 = nterm assignment ()
 -> $$ = nterm statement ()
-Stack now 0 1 3 12
 Entering state 22
-Reading a token: Next token is token NL ()
+Stack now 0 1 3 12 22
+Reading a token
+Next token is token NL ()
 Shifting token NL ()
 Entering state 32
-Reducing stack by rule 3 (line 11):
+Stack now 0 1 3 12 22 32
+Reducing stack by rule 3 (line 10):
    $1 = nterm statement_list ()
    $2 = nterm statement ()
    $3 = token NL ()
 -> $$ = nterm statement_list ()
-Stack now 0 1 3
 Entering state 12
-Reading a token: Next token is token ID ()
+Stack now 0 1 3 12
+Reading a token
+Next token is token ID ()
 Shifting token ID ()
 Entering state 5
-Reading a token: Next token is token EQ ()
+Stack now 0 1 3 12 5
+Reading a token
+Next token is token EQ ()
 Shifting token EQ ()
 Entering state 18
-Reading a token: Next token is token NUM ()
+Stack now 0 1 3 12 5 18
+Reading a token
+Next token is token NUM ()
 Shifting token NUM ()
 Entering state 27
-Reducing stack by rule 17 (line 17):
+Stack now 0 1 3 12 5 18 27
+Reducing stack by rule 17 (line 16):
    $1 = token NUM ()
 -> $$ = nterm expression ()
-Stack now 0 1 3 12 5 18
 Entering state 30
-Reducing stack by rule 15 (line 16):
+Stack now 0 1 3 12 5 18 30
+Reducing stack by rule 15 (line 15):
    $1 = token ID ()
    $2 = token EQ ()
    $3 = nterm expression ()
 -> $$ = nterm assignment ()
-Stack now 0 1 3 12
 Entering state 16
-Reducing stack by rule 5 (line 12):
+Stack now 0 1 3 12 16
+Reducing stack by rule 5 (line 11):
    $1 = nterm assignment ()
 -> $$ = nterm statement ()
-Stack now 0 1 3 12
 Entering state 22
-Reading a token: Next token is token NL ()
+Stack now 0 1 3 12 22
+Reading a token
+Next token is token NL ()
 Shifting token NL ()
 Entering state 32
-Reducing stack by rule 3 (line 11):
+Stack now 0 1 3 12 22 32
+Reducing stack by rule 3 (line 10):
    $1 = nterm statement_list ()
    $2 = nterm statement ()
    $3 = token NL ()
 -> $$ = nterm statement_list ()
-Stack now 0 1 3
 Entering state 12
-Reading a token: Next token is token ID ()
+Stack now 0 1 3 12
+Reading a token
+Next token is token ID ()
 Shifting token ID ()
 Entering state 5
-Reading a token: Next token is token EQ ()
+Stack now 0 1 3 12 5
+Reading a token
+Next token is token EQ ()
 Shifting token EQ ()
 Entering state 18
-Reading a token: Next token is token NUM ()
+Stack now 0 1 3 12 5 18
+Reading a token
+Next token is token NUM ()
 Shifting token NUM ()
 Entering state 27
-Reducing stack by rule 17 (line 17):
+Stack now 0 1 3 12 5 18 27
+Reducing stack by rule 17 (line 16):
    $1 = token NUM ()
 -> $$ = nterm expression ()
-Stack now 0 1 3 12 5 18
 Entering state 30
-Reducing stack by rule 15 (line 16):
+Stack now 0 1 3 12 5 18 30
+Reducing stack by rule 15 (line 15):
    $1 = token ID ()
    $2 = token EQ ()
    $3 = nterm expression ()
 -> $$ = nterm assignment ()
-Stack now 0 1 3 12
 Entering state 16
-Reducing stack by rule 5 (line 12):
+Stack now 0 1 3 12 16
+Reducing stack by rule 5 (line 11):
    $1 = nterm assignment ()
 -> $$ = nterm statement ()
-Stack now 0 1 3 12
 Entering state 22
-Reading a token: Next token is token NL ()
+Stack now 0 1 3 12 22
+Reading a token
+Next token is token NL ()
 Shifting token NL ()
 Entering state 32
-Reducing stack by rule 3 (line 11):
+Stack now 0 1 3 12 22 32
+Reducing stack by rule 3 (line 10):
    $1 = nterm statement_list ()
    $2 = nterm statement ()
    $3 = token NL ()
 -> $$ = nterm statement_list ()
-Stack now 0 1 3
 Entering state 12
-Reading a token: Next token is token ID ()
+Stack now 0 1 3 12
+Reading a token
+Next token is token ID ()
 Shifting token ID ()
 Entering state 5
-Reading a token: Next token is token EQ ()
+Stack now 0 1 3 12 5
+Reading a token
+Next token is token EQ ()
 Shifting token EQ ()
 Entering state 18
-Reading a token: Next token is token REAL_DIG ()
+Stack now 0 1 3 12 5 18
+Reading a token
+Next token is token REAL_DIG ()
 Shifting token REAL_DIG ()
 Entering state 29
-Reducing stack by rule 18 (line 17):
+Stack now 0 1 3 12 5 18 29
+Reducing stack by rule 18 (line 16):
    $1 = token REAL_DIG ()
 -> $$ = nterm expression ()
-Stack now 0 1 3 12 5 18
 Entering state 30
-Reducing stack by rule 15 (line 16):
+Stack now 0 1 3 12 5 18 30
+Reducing stack by rule 15 (line 15):
    $1 = token ID ()
    $2 = token EQ ()
    $3 = nterm expression ()
 -> $$ = nterm assignment ()
-Stack now 0 1 3 12
 Entering state 16
-Reducing stack by rule 5 (line 12):
+Stack now 0 1 3 12 16
+Reducing stack by rule 5 (line 11):
    $1 = nterm assignment ()
 -> $$ = nterm statement ()
-Stack now 0 1 3 12
 Entering state 22
-Reading a token: Next token is token NL ()
+Stack now 0 1 3 12 22
+Reading a token
+Next token is token NL ()
 Shifting token NL ()
 Entering state 32
-Reducing stack by rule 3 (line 11):
+Stack now 0 1 3 12 22 32
+Reducing stack by rule 3 (line 10):
    $1 = nterm statement_list ()
    $2 = nterm statement ()
    $3 = token NL ()
 -> $$ = nterm statement_list ()
-Stack now 0 1 3
 Entering state 12
-Reading a token: Next token is token ID ()
+Stack now 0 1 3 12
+Reading a token
+Next token is token ID ()
 Shifting token ID ()
 Entering state 5
-Reading a token: Next token is token EQ ()
+Stack now 0 1 3 12 5
+Reading a token
+Next token is token EQ ()
 Shifting token EQ ()
 Entering state 18
-Reading a token: Next token is token NUM ()
+Stack now 0 1 3 12 5 18
+Reading a token
+Next token is token NUM ()
 Shifting token NUM ()
 Entering state 27
-Reducing stack by rule 17 (line 17):
+Stack now 0 1 3 12 5 18 27
+Reducing stack by rule 17 (line 16):
    $1 = token NUM ()
 -> $$ = nterm expression ()
-Stack now 0 1 3 12 5 18
 Entering state 30
-Reducing stack by rule 15 (line 16):
+Stack now 0 1 3 12 5 18 30
+Reducing stack by rule 15 (line 15):
    $1 = token ID ()
    $2 = token EQ ()
    $3 = nterm expression ()
 -> $$ = nterm assignment ()
-Stack now 0 1 3 12
 Entering state 16
-Reducing stack by rule 5 (line 12):
+Stack now 0 1 3 12 16
+Reducing stack by rule 5 (line 11):
    $1 = nterm assignment ()
 -> $$ = nterm statement ()
-Stack now 0 1 3 12
 Entering state 22
-Reading a token: Next token is token NL ()
+Stack now 0 1 3 12 22
+Reading a token
+Next token is token NL ()
 Shifting token NL ()
 Entering state 32
-Reducing stack by rule 3 (line 11):
+Stack now 0 1 3 12 22 32
+Reducing stack by rule 3 (line 10):
    $1 = nterm statement_list ()
    $2 = nterm statement ()
    $3 = token NL ()
 -> $$ = nterm statement_list ()
-Stack now 0 1 3
 Entering state 12
-Reading a token: Next token is token ID ()
-Shifting token ID ()
-Entering state 5
-Reading a token: Next token is token EQ ()
-Shifting token EQ ()
-Entering state 18
-Reading a token: Next token is token LIT ()
-Shifting token LIT ()
-Entering state 28
-Reducing stack by rule 19 (line 17):
-   $1 = token LIT ()
--> $$ = nterm expression ()
-Stack now 0 1 3 12 5 18
-Entering state 30
-Reducing stack by rule 15 (line 16):
-   $1 = token ID ()
-   $2 = token EQ ()
-   $3 = nterm expression ()
--> $$ = nterm assignment ()
 Stack now 0 1 3 12
-Entering state 16
-Reducing stack by rule 5 (line 12):
-   $1 = nterm assignment ()
--> $$ = nterm statement ()
-Stack now 0 1 3 12
-Entering state 22
-Reading a token: Next token is token NL ()
-Shifting token NL ()
-Entering state 32
-Reducing stack by rule 3 (line 11):
-   $1 = nterm statement_list ()
-   $2 = nterm statement ()
-   $3 = token NL ()
--> $$ = nterm statement_list ()
-Stack now 0 1 3
-Entering state 12
-Reading a token: Next token is token ID ()
-Shifting token ID ()
-Entering state 5
-Reading a token: Next token is token EQ ()
-Shifting token EQ ()
-Entering state 18
-Reading a token: Next token is token LIT ()
-Shifting token LIT ()
-Entering state 28
-Reducing stack by rule 19 (line 17):
-   $1 = token LIT ()
--> $$ = nterm expression ()
-Stack now 0 1 3 12 5 18
-Entering state 30
-Reducing stack by rule 15 (line 16):
-   $1 = token ID ()
-   $2 = token EQ ()
-   $3 = nterm expression ()
--> $$ = nterm assignment ()
-Stack now 0 1 3 12
-Entering state 16
-Reducing stack by rule 5 (line 12):
-   $1 = nterm assignment ()
--> $$ = nterm statement ()
-Stack now 0 1 3 12
-Entering state 22
-Reading a token: Next token is token NL ()
-Shifting token NL ()
-Entering state 32
-Reducing stack by rule 3 (line 11):
-   $1 = nterm statement_list ()
-   $2 = nterm statement ()
-   $3 = token NL ()
--> $$ = nterm statement_list ()
-Stack now 0 1 3
-Entering state 12
-Reading a token: Next token is token FOR ()
+Reading a token
+Next token is token FOR ()
 Shifting token FOR ()
 Entering state 11
-Reading a token: Next token is token ID ()
+Stack now 0 1 3 12 11
+Reading a token
+Next token is token ID ()
 Shifting token ID ()
 Entering state 20
-Reading a token: Next token is token EQ ()
+Stack now 0 1 3 12 11 20
+Reading a token
+Next token is token EQ ()
 Shifting token EQ ()
 Entering state 31
-Reading a token: Next token is token NUM ()
+Stack now 0 1 3 12 11 20 31
+Reading a token
+Next token is token NUM ()
 Shifting token NUM ()
 Entering state 34
-Reading a token: Next token is token TO ()
+Stack now 0 1 3 12 11 20 31 34
+Reading a token
+Next token is token TO ()
 Shifting token TO ()
 Entering state 36
-Reading a token: Next token is token NUM ()
+Stack now 0 1 3 12 11 20 31 34 36
+Reading a token
+Next token is token NUM ()
 Shifting token NUM ()
 Entering state 37
-Reading a token: Next token is token NL ()
+Stack now 0 1 3 12 11 20 31 34 36 37
+Reading a token
+Next token is token NL ()
 Shifting token NL ()
 Entering state 38
-Reading a token: Next token is token PRINT ()
+Stack now 0 1 3 12 11 20 31 34 36 37 38
+Reading a token
+Next token is token PRINT ()
 Shifting token PRINT ()
 Entering state 6
-Reading a token: Next token is token LIT ()
+Stack now 0 1 3 12 11 20 31 34 36 37 38 6
+Reading a token
+Next token is token LIT ()
 Shifting token LIT ()
 Entering state 19
-Reducing stack by rule 7 (line 12):
+Stack now 0 1 3 12 11 20 31 34 36 37 38 6 19
+Reducing stack by rule 7 (line 11):
    $1 = token PRINT ()
    $2 = token LIT ()
 -> $$ = nterm statement ()
-Stack now 0 1 3 12 11 20 31 34 36 37 38
 Entering state 39
-Reducing stack by rule 20 (line 18):
+Stack now 0 1 3 12 11 20 31 34 36 37 38 39
+Reducing stack by rule 20 (line 17):
    $1 = token FOR ()
    $2 = token ID ()
    $3 = token EQ ()
@@ -488,27 +519,31 @@ Reducing stack by rule 20 (line 18):
    $7 = token NL ()
    $8 = nterm statement ()
 -> $$ = nterm loop ()
-Stack now 0 1 3 12
 Entering state 17
-Reducing stack by rule 6 (line 12):
+Stack now 0 1 3 12 17
+Reducing stack by rule 6 (line 11):
    $1 = nterm loop ()
 -> $$ = nterm statement ()
-Stack now 0 1 3 12
 Entering state 22
-Reading a token: Next token is token NL ()
+Stack now 0 1 3 12 22
+Reading a token
+Next token is token NL ()
 Shifting token NL ()
 Entering state 32
-Reducing stack by rule 3 (line 11):
+Stack now 0 1 3 12 22 32
+Reducing stack by rule 3 (line 10):
    $1 = nterm statement_list ()
    $2 = nterm statement ()
    $3 = token NL ()
 -> $$ = nterm statement_list ()
-Stack now 0 1 3
 Entering state 12
-Reading a token: Next token is token END_ ()
+Stack now 0 1 3 12
+Reading a token
+Next token is token END_ ()
 Shifting token END_ ()
 Entering state 21
-Reducing stack by rule 1 (line 10):
+Stack now 0 1 3 12 21
+Reducing stack by rule 1 (line 9):
    $1 = token BEGIN_ ()
    $2 = token NL ()
    $3 = nterm statement_list ()
